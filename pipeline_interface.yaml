@@ -1,0 +1,10 @@
+pipeline_name: BEDLIFTER
+pipeline_type: sample
+path: pipeline/bedlifter.py
+command_template: >
+  {pipeline.path}
+  --bedfile {sample.output_file_path}
+  --genome {sample.genome}
+  --outfolder {sample.outfolder}
+
+  
