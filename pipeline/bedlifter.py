@@ -66,7 +66,7 @@ def main():
                 with open(chain_new_path, "wb") as f_out:
                     shutil.copyfileobj(f_in, f_out)
             chain_list.append(chain_new_path)
-            #pm.clean_add(chain_new_path)
+            pm.clean_add(chain_new_path)
         else:
             chain_list.append(i)
 
